@@ -33,13 +33,13 @@
     padding-top: 5px; /* Ajoute un espace en haut du contenu pour compenser la bordure */
   }
 
-img {
+  img {
     width: 20%;
     height: auto;
     border-top: none;
 }
 
-
+ 
 
 
 
