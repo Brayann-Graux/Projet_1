@@ -125,21 +125,26 @@
     color: black;
     margin-left: 10px;
 }
-
+/* 
 .card-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 20px 0;
+} */
+
+.hebergements-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card {
-    width: calc(33.33% - 20px); /* Chaque carte occupe environ un tiers de l'espace disponible avec un espace de 20px entre elles */
+.hebergements-cards .card {
+    /* width: calc(33.33% - 20px); Chaque carte occupe environ un tiers de l'espace disponible avec un espace de 20px entre elles */
     margin-bottom: 20px;
     background-color: #fff; /* Couleur de fond de la carte */
     border: 1px solid #ddd; /* Bordure de la carte */
     border-radius: 5px; /* Coins arrondis de la carte */
-    overflow: hidden; /* Cache tout contenu débordant */
+    /* overflow: hidden; Cache tout contenu débordant */
 }
 
 .card img {
@@ -169,10 +174,6 @@
     display: flex; /* Affiche les étoiles en ligne */
 }
 
-.card-rating i {
-    color: #f5a623; /* Couleur jaune pour les étoiles actives */
-}
-
 .neutral-star {
     color: #ccc; /* Couleur grise pour les étoiles neutres */
 }
@@ -187,13 +188,16 @@
     width: 1px; /* Largeur de 1 pixel */
     height: 1px; /* Hauteur de 1 pixel */
     padding: 0; /* Pas de rembourrage */
-    margin: -1px; /* Marge négative pour cacher l'élément */
+    margin: 0px; /* Marge négative pour cacher l'élément */
     overflow: hidden; /* Cache tout contenu débordant */
     clip: rect(0, 0, 0, 0); /* Cache l'élément */
     white-space: nowrap; /* Empêche les retours à la ligne */
     border: 0; /* Pas de bordure */
 }
 
+.hebergements img {
+    display: flex;
+}
 
 
 
