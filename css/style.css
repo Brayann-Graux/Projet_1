@@ -122,6 +122,13 @@ color: black;
     font-size: 16px;
 }
 
+.barre-recherche input::placeholder {
+    color: black; /* Couleur du texte du placeholder */
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
 /* Style du bouton de recherche */
 .barre-recherche button[type="submit"] {
     background-color: #0065FC; /* Couleur de fond bleue */
@@ -130,6 +137,7 @@ color: black;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 0 15px 15px 0; /* Arrondi seulement sur le côté droit */
+    font-weight: bold;
 }
 
 /* Style lorsque le bouton est survolé */
@@ -142,6 +150,10 @@ color: black;
 .container-filtres {
     display: flex; /* Utilisation de flexbox pour aligner les éléments */
     align-items: center; /* Aligner les éléments verticalement */
+}
+
+.container-filtres i {
+    padding-right: 10px;
 }
 
 .Filtres {
@@ -200,6 +212,7 @@ color: black;
 
 .bouton-economique:hover {
     background-color: #deebff;
+    transform: translateY(-5px);
 }
 
 .bouton-Familial {
@@ -210,6 +223,7 @@ color: black;
 
 .bouton-Familial:hover {
     background-color: #deebff;
+    transform: translateY(-5px);
 }
 
 .bouton-Romantique {
@@ -220,6 +234,7 @@ color: black;
 
 .bouton-Romantique:hover {
     background-color: #deebff;
+    transform: translateY(-5px);
 }
 
 .bouton-Nos-Pépites {
@@ -230,6 +245,7 @@ color: black;
 
 .bouton-Nos-Pépites:hover {
     background-color: #deebff;
+    transform: translateY(-5px);
 }
 
 /* ICONE INFO ET TEXTE */
