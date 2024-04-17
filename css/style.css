@@ -441,7 +441,6 @@ color: black;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    padding: -10px;
 }
 
 .populaires-cards .card {
@@ -451,7 +450,7 @@ color: black;
 
 .populaires-cards img {
     width: 33%;
-    height: 14  gvv6px;
+    height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 5px;
