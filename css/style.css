@@ -9,7 +9,6 @@
   /* Styles pour le header */
   header {
     background-color: #ffffff; /* Couleur de fond du header */
-    color: white; /* Couleur du texte */
     padding: 10px; /* Espacement interne */
     display: flex; /* Utilise Flexbox pour aligner les éléments */
     justify-content: space-between; /* Alignement des éléments sur les côtés */
@@ -133,7 +132,7 @@ color: black;
 .barre-recherche button[type="submit"] {
     background-color: #0065FC; /* Couleur de fond bleue */
     color: white; /* Couleur du texte blanc */
-    border: none;
+    border: 2px solid #0065FC;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 0 15px 15px 0; /* Arrondi seulement sur le côté droit */
@@ -143,6 +142,7 @@ color: black;
 /* Style lorsque le bouton est survolé */
 .barre-recherche button[type="submit"]:hover {
     background-color: darkblue; /* Changer la couleur de fond au survol */
+    border: 2px solid darkblue;
 }
 
 /* Filtres */
@@ -397,7 +397,6 @@ color: black;
     padding: 0; /* Pas de rembourrage */
     margin: 0px; /* Marge négative pour cacher l'élément */
     overflow: hidden; /* Cache tout contenu débordant */
-    clip: rect(0, 0, 0, 0); /* Cache l'élément */
     white-space: nowrap; /* Empêche les retours à la ligne */
     border: 0; /* Pas de bordure */
 }
