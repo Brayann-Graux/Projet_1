@@ -1,4 +1,3 @@
-/*****header*****/
 * {
     margin: 0;
     padding: 0;
@@ -6,52 +5,20 @@
     font-family: 'Raleway', sans-serif;
   }
   
-  /* Styles pour le header */
-  header {
-    background-color: #ffffff; /* Couleur de fond du header */
-    padding: 10px; /* Espacement interne */
-    display: flex; /* Utilise Flexbox pour aligner les éléments */
-    justify-content: space-between; /* Alignement des éléments sur les côtés */
-    align-items: center; /* Centre les éléments verticalement */
-  }
-  
-  /* Styles pour les liens du header */
-  header a {
-    color: black; /* Couleur des liens */
-    text-decoration: none; /* Supprime les soulignements des liens */
-    margin-left: 20px; /* Espacement entre les liens */
-    }
-  
-  /* Styles pour les liens de droite */
-  .header-right {
-    margin-left: auto; /* Déplace les éléments vers la droite */
-  }
-  
-  .header-right a:hover{
-    color: #0065FC;
-    border-top: 2px solid #0065FC; /* Ajoute une bordure supérieure bleue de 5 pixels */
-    padding-top: 5px; /* Ajoute un espace en haut du contenu pour compenser la bordure */
-  }
-
-  img {
-    width: 50%;
-    height: auto;
-    border-top: none;
-}
-
-:root {
+  :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
-    color: var(--main-color);
-}
-
 body {
     display: flex;
     justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .main-container {
@@ -61,11 +28,48 @@ body {
     box-sizing: border-box;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+/*****header*****/
+
+header {
+    width: 100%;
+    background-color: #ffffff; /* Couleur de fond du header */
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    
 }
 
+header nav {
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a img {
+    width: 120px;
+    height: 30px;
+}
+
+header nav div {
+    width: 25%;
+    display: flex;
+}
+
+header nav div a {
+    text-align: center;
+    width: 50%;
+}
+
+header nav div a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC; /* Ajoute une bordure supérieure bleue de 5 pixels */
+    padding-top: 5px; /* Ajoute un espace en haut du contenu pour compenser la bordure */
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
 
 .text-trouver-hebergement {
     font-size: 22px;
@@ -284,101 +288,83 @@ color: black;
     justify-content: space-between;
 }
 
-.hebergement {
-    margin-right: 30px; /* Ajoute un espace de 10px entre les deux sections */
+.hebergements {
+    flex-wrap: wrap;
+    display: flex;
+    width: 65%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
 }
 
 .populaires {
-    margin-left: 30px;
-    width: 429px; /* Largeur de la section des populaires */
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: 30%;
+    padding: 30px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 /* CARDS HEBERGEMENTS */
 
 
-.background-hebergement {
-    border-radius: 15px;
-    width: 871px;
-    height: 614px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    position: relative;
-    display: flex;
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
-}
 
 .hebergements-title {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    font-weight: bold;
+    width: 100%;
+    margin: 30px;
 }
 
-.grid-container-hebergements {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 207.25px);
-    grid-gap: 30px;
+.hebergement-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 30px;
 }
 
-/* Styles pour les cartes Hebergement*/
+.hebergement-cards a {
+    width: 30%;
+}
 
-.hebergements {
-    width: 65%;
+.hebergement-cards a article {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-bottom: 30px;
 }
-.hebergements-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    margin-top: 30px;
-}
-.hebergements img {
+
+.hebergement-cards a article img {
     display: flex;
     object-fit: cover;
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
-    margin-bottom: 4px;
 }
 
-.card-hebergement {
-    width: 250.33px;
-    height: 207.25px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    cursor: pointer;
-    overflow: hidden;
-    padding: 5px;
+.hebergement-cards a article .card-content {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
-.card-hebergement:hover {
-    transform: translateY(-5px);
-}
-
-.card-details {
-    padding: 5px;
-    margin-left: 5px;
-    background-color: #fff;
-}
-
-.hotel-title {
+.hebergement-cards a article .card-content h3 {
     font-size: 16px;
-    margin-top: 0;
-    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.price {
+.hebergement-cards a article .card-content p {
     font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 3px;
+    margin-bottom: 15px;
 }
 
 .card-rating {
-    margin-top: 5px;
-    margin-left:10px;
-    display: flex; /* Affiche les étoiles en ligne */
+    object-fit: cover;
 }
 
 .neutral-star {
@@ -402,57 +388,46 @@ color: black;
 }
 
 .footer {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
     cursor: pointer;
-    font-weight: bold
+    font-weight: bold;
+    font-size: 18px;
 }
 
 /****** Populaires ******/
 
-.background-populaires {
-    width: 429px; 
-    height: 614px;
-    background-color: #f2f2f2; /* Fond gris */
-    padding: 20px; /* Espacement à l'intérieur */
-    border-radius: 15px; /* Coins arrondis */
-}
-
-.card {
-    width: 369px; 
-    height: 146px;
-    background-color: #fff; /* Fond blanc */
-    border-radius: 20px; /* Coins arrondis */
-    overflow: hidden; /* Pour cacher le débordement de l'image */
-    display: flex; /* Pour aligner l'image et le texte */
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.populaires {
-    width: 32%;
-}
-
-.populaires-title {
+.populaires h2 {
+    width: 80%;
+    height: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
+}
+
+.populaires a {
+    width: 100%;
+}
+
+.populaires .card {
+    border-radius: 20px;
+}
+
+.populaires-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .populaires-cards .card {
+    width: 100%;
     display: flex;
-    margin-top: 33px;
+    justify-content: space-between;
+    background-color: white;
 }
 
 .populaires-cards img {
     width: 33%;
     height: 146px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px 0 0 20px;
     padding: 5px;
 }
 
@@ -465,16 +440,17 @@ color: black;
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populaires-cards h3 {
+    font-size: 16px;
     margin-top: 10px;
-    margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0px;
+.populaires-cards p {
+    font-size: 14px;
+    margin-top: 10px;
 }
 
-.populaires-cards .card-rating {
+.card-rating {
     margin-bottom: 20px;
 }
 
