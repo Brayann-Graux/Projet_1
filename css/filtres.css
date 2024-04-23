@@ -1,0 +1,109 @@
+
+/* Filtres */
+
+.container-filtres {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    align-items: center; /* Aligner les éléments verticalement */
+}
+
+.container-filtres i {
+    padding-right: 10px;
+}
+
+.Filtres {
+    padding-top: 15px;
+}
+
+.bouton-economique {
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 25Px;
+    padding: 10px 20px; /* Ajustez les valeurs de padding pour agrandir le bouton */
+    font-size: 17px; /* Ajustez la taille de la police selon vos besoins */
+    font-weight: bold; /* Mettre le texte en gras */
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: 20px;
+}
+
+.bouton-Familial {
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 25Px;
+    padding: 10px 20px; /* Ajustez les valeurs de padding pour agrandir le bouton */
+    font-size: 17px; /* Ajustez la taille de la police selon vos besoins */
+    font-weight: bold; /* Mettre le texte en gras */
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.bouton-Romantique {
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 25Px;
+    padding: 10px 20px; /* Ajustez les valeurs de padding pour agrandir le bouton */
+    font-size: 17px; /* Ajustez la taille de la police selon vos besoins */
+    font-weight: bold; /* Mettre le texte en gras */
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.bouton-Nos-Pépites {
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 25Px;
+    padding: 10px 20px; /* Ajustez les valeurs de padding pour agrandir le bouton */
+    font-size: 17px; /* Ajustez la taille de la police selon vos besoins */
+    font-weight: bold; /* Mettre le texte en gras */
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.bouton-economique:hover {
+    background-color: #deebff;
+    transform: translateY(-5px);
+}
+
+.bouton-Familial {
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 25Px;
+}
+
+.bouton-Familial:hover {
+    background-color: #deebff;
+    transform: translateY(-5px);
+}
+
+.bouton-Romantique {
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 25Px;
+}
+
+.bouton-Romantique:hover {
+    background-color: #deebff;
+    transform: translateY(-5px);
+}
+
+.bouton-Nos-Pépites {
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 25Px;
+}
+
+.bouton-Nos-Pépites:hover {
+    background-color: #deebff;
+    transform: translateY(-5px);
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media screen and (max-width: 1024px) {}

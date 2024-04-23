@@ -1,0 +1,34 @@
+
+/* ICONE INFO ET TEXTE */
+
+.containercircle {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.info-circle {
+    display: inline-block;
+    width: 24px; /* Diamètre du cercle */
+    height: 24px; /* Diamètre du cercle */
+    border-radius: 50%; /* Pour créer un cercle */
+    background-color: #007bff; /* Couleur de fond du cercle */
+    text-align: center;
+    line-height: 27px; /* Centrage vertical */
+    color: white; /* Couleur de l'icône */
+}
+ 
+.info-icon {
+    font-size: 20px; /* Taille de l'icône */
+}
+
+.text-500-logement{
+    color: black;
+    margin-left: 10px;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media screen and (max-width: 1024px) {}

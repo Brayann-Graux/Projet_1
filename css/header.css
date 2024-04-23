@@ -1,0 +1,89 @@
+
+/*****header*****/
+
+header {
+    width: 100%;
+    background-color: #ffffff; /* Couleur de fond du header */
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    
+}
+
+header nav {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a img {
+    width: 120px;
+    height: 30px;
+}
+
+header nav div {
+    width: 25%;
+    display: flex;
+    gap: 30px;
+}
+
+header nav div a {
+    text-align: center;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+header nav div a:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC; /* Ajoute une bordure supérieure bleue de 5 pixels */
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+.text-trouver-hebergement {
+    font-size: 22px;
+    padding-top: 26px;
+    padding-bottom: 10px;
+}
+
+.plein-centre {
+    font-size: 16px;
+    padding-bottom: 49px;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media screen and (max-width: 1024px) {
+
+    header nav div a {
+        text-align: center;
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    header nav div a:hover {
+        color: #0065FC;
+        border-top: 2px solid #0065FC; /* Ajoute une bordure supérieure bleue de 5 pixels */
+        padding-top: 3px; /* Ajoute un espace en haut du contenu pour compenser la bordure */
+    }
+     
+}
+
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 768px) {
+    /* ... */
+
+    header nav div {
+        width: 100%;
+    }
+
+    header nav a img {
+        width: 120px;
+        height: 30px;
+    }
+
+}

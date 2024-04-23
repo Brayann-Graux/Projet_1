@@ -1,0 +1,89 @@
+
+/* BARRE DE RECHERCHE */
+
+/* Style de la barre de recherche */
+.barre-recherche {
+    display: flex;
+    align-items: center;
+    width: 370px;
+    height: 40px;
+    border: 0.5px solid #f2f2f2;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+
+/* Style du conteneur d'icône */
+.icon-container {
+    width: 40px; /* Largeur du carré */
+    height: 40px; /* Hauteur du carré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
+.icon-container .fa-location-dot {
+color: black;
+}
+
+/* Style de l'icône */
+.icon {
+    font-size: 20px;
+}
+
+
+
+/* Style de la zone de texte */
+.barre-recherche input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.barre-recherche input::placeholder {
+    color: black; /* Couleur du texte du placeholder */
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+/* Style du bouton de recherche */
+.barre-recherche button[type="submit"] {
+    background-color: #0065FC; /* Couleur de fond bleue */
+    color: white; /* Couleur du texte blanc */
+    border: 2px solid #0065FC;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0; /* Arrondi seulement sur le côté droit */
+    font-weight: bold;
+}
+
+/* Style lorsque le bouton est survolé */
+.barre-recherche button[type="submit"]:hover {
+    background-color: darkblue; /* Changer la couleur de fond au survol */
+    border: 2px solid darkblue;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media screen and (max-width: 1024px) {}
+
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 768px) {
+    /* ... */
+
+    .barre-recherche {
+        display: flex;
+        align-items: center;
+        width: 335px;
+        height: 40px;
+        border: 0.5px solid #f2f2f2;
+        border-radius: 15px;
+        overflow: hidden;
+        
+    }
+}
