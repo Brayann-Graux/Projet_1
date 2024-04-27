@@ -1,41 +1,27 @@
 
 /****** Footer ******/
 
-footer {
-    margin-top: 50px;
-    display: flex; /* Affichage en mode flexbox */
-    justify-content: space-between; /* Pour espacer les colonnes */
-    background-color: #f2f2f2; /* Fond gris */
-    padding: 20px; /* Espacement à l'intérieur du footer */
-    border-top: 1px solid #ccc; /* Bordure supérieure grise */
+.liens-footer .titre {
+    font-size: 18px;
+    font-weight: bold;
 }
 
-footer div {
-    flex: 1; /* Pour que chaque colonne occupe le même espace */
-    padding: 0 20px; /* Espacement à l'intérieur de chaque colonne */
+.liens-footer ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px 20px;
+    font-size: 16px;
+    height: 163px;
 }
 
-footer h2 {
-    margin-bottom: 10px; /* Espacement en bas du titre */
+.liens-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
 }
 
-footer ul {
-    list-style-type: none; /* Suppression des puces de liste */
-    padding: 0; /* Suppression des marges intérieures de la liste */
-}
-
-footer ul li {
-    margin-bottom: 10px; /* Espacement entre chaque élément de liste */
-}
-
-footer ul li a {
-    text-decoration: none; /* Suppression du soulignement des liens */
-    color: #333; /* Couleur du texte des liens */
-    transition: color 0.3s; /* Transition fluide de la couleur du texte */
-}
-
-footer ul li a:hover {
-    color: #0065FC; /* Couleur du texte des liens au survol */
+.liens-footer li {
+    padding-top: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -43,3 +29,10 @@ footer ul li a:hover {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {}
+
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 768px) {
+    footer .liens-footer {
+        display: block;
+    }
+}

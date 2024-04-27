@@ -1,69 +1,73 @@
 
 /* BARRE DE RECHERCHE */
-
-/* Style de la barre de recherche */
-.barre-recherche {
-    display: flex;
-    align-items: center;
-    width: 370px;
-    height: 40px;
-    border: 0.5px solid #f2f2f2;
-    border-radius: 15px;
-    overflow: hidden;
-    
+.formulaire {
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
-/* Style du conteneur d'icône */
-.icon-container {
-    width: 40px; /* Largeur du carré */
-    height: 40px; /* Hauteur du carré */
+.formulaire-recherche {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.formulaire input {
+    height: 49px;
+}
+
+.fa-solid.fa-location-dot {
+    color: black;
+    background: #F2F2F2;
+    height: 49px;
+    width: 50px;
+    border-radius: 15px 0px 0px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F2F2F2;
 }
 
-.icon-container .fa-location-dot {
-color: black;
+#localisation {
+    border: #F2F2F2 solid 1px;
+    height: 46px;
+    width: 195px;
 }
 
-/* Style de l'icône */
-.icon {
-    font-size: 20px;
-}
-
-
-
-/* Style de la zone de texte */
-.barre-recherche input[type="text"] {
-    flex: 1;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-}
-
-.barre-recherche input::placeholder {
-    color: black; /* Couleur du texte du placeholder */
-    font-weight: bold;
+#localisation::placeholder {
     font-size: 18px;
-    padding-left: 20px;
-}
-
-/* Style du bouton de recherche */
-.barre-recherche button[type="submit"] {
-    background-color: #0065FC; /* Couleur de fond bleue */
-    color: white; /* Couleur du texte blanc */
-    border: 2px solid #0065FC;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 0 15px 15px 0; /* Arrondi seulement sur le côté droit */
+    color: black;
     font-weight: bold;
+    opacity: 1;
+    text-align: center;
 }
 
-/* Style lorsque le bouton est survolé */
-.barre-recherche button[type="submit"]:hover {
-    background-color: darkblue; /* Changer la couleur de fond au survol */
-    border: 2px solid darkblue;
+#localisation:focus {
+    outline: none;
+}
+
+#bouton-rechercher {
+    font-size: 18px;
+    color: white;
+    background-color: #0065FC;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0px 15px 15px 0px;
+    border: solid #0065FC;
+    width: 132px;
+}
+
+#bouton-rechercher-mobile {
+    display: none;
+}
+
+#bouton-rechercher:active {
+    transform: translateY(1px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#localisation[type="text"] {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -76,14 +80,33 @@ color: black;
 @media screen and (max-width: 768px) {
     /* ... */
 
-    .barre-recherche {
-        display: flex;
-        align-items: center;
-        width: 335px;
-        height: 40px;
-        border: 0.5px solid #f2f2f2;
-        border-radius: 15px;
-        overflow: hidden;
-        
+    .parametres-recherche {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 30px;
+    }
+
+    #bouton-rechercher {
+        display: none;
+    }
+
+    #bouton-rechercher-mobile {
+        font-size: 18px;
+    color: white;
+    background-color: #0065FC;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0px 15px 15px 0px;
+    border: solid #0065FC;
+    width: 132px;
+    }
+
+    .barre-filtres button {
+        width: 162px;
+    }
+
+    #localisation {
+        width: 100%;
+        border-right: none;
     }
 }

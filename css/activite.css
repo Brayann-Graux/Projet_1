@@ -1,61 +1,78 @@
-
+ 
 /****** Activités ******/
 
-#ancre-activites section {
-    display: flex; /* Utilisation de flexbox */
-    gap: 20px; /* Espacement entre les cartes */
-}
-
-.activites-titre {
-    padding-top: 50px;
-    padding-left: 30px;
+.activites {
+    margin: 35px 0px;
     padding-bottom: 30px;
 }
 
-.activite-card {
+.activites-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.activites img {
+    display: flex;
+    object-fit: cover;
+    justify-content: space-between;
     width: 100%;
-    background-color: #FFFFFF; /* Fond blanc */
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombrage gris */
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 4px;
 }
 
-.activite-card img {
-    width: 100%; 
-    height: 85%;
-    object-fit: cover; /* Pour couvrir toute la zone de l'image */
-    border-radius: 20px 20px 0 0;
-    padding: 0 5px;
-    padding-top: 5px;
+.activites .card-content {
+    padding: 20px 19px;
+    box-shadow:
+        4px 4px 4px rgba(0, 0, 0, 10%),
+        -4px 4px 4px rgba(0, 0, 0, 10%);
+    border-radius: 0px 0px 20px 20px;
 }
 
+.activites-title h2 {
+    font-size: 22px;
+    padding: 30px 0px;
+}
 
-.activite-card p {
-    text-align: center; /* Pour centrer le texte */
-    font-weight: bold;
+.activites-cards h3 {
     font-size: 16px;
+    text-align: center;
 }
 
-.activite-card:hover {
+.activites-cards a:hover {
     transform: translateY(-5px);
 }
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {
-    .activites-grid {
-        display: flex;    
+
+    .activites img {
+        height: 200px;
     }
 
-    .activites-grid a p {
-        padding: 0;
+    .activites .card-content {
+        height: 50px;
     }
 
-    .activites-card img {
-        max-height: 85%;
-    }
 }
+
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 768px) {
+    .activites {
+        margin: 0px 30px;
+    }
+
+    .activites-cards {
+        display: block;
+    }
+
+    .activites-cards a:hover {
+        transform: translateY(-5px);
+    }
+
+}                                                                 

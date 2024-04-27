@@ -1,56 +1,41 @@
 
 /*****header*****/
 
-header {
-    width: 100%;
-    background-color: #ffffff; /* Couleur de fond du header */
-    display: flex; /* Utilise Flexbox pour aligner les éléments */
-    
+.liste_nav li {
+    margin-right: 68px;
+    padding-top: 20px;
 }
 
-header nav {
-    flex-wrap: wrap;
+.liste_nav li:hover {
+    border-top: #0065FC solid 2px;
+    color: #0065FC;
+    padding-top: 15px;
+}
+
+header {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-header nav a img {
-    width: 120px;
-    height: 30px;
-}
-
-header nav div {
-    width: 25%;
+.liste_nav {
     display: flex;
-    gap: 30px;
+    list-style-type: none;
+    padding: 0;
 }
 
-header nav div a {
-    text-align: center;
-    width: 100%;
-    padding: 30px 0px;
+.liste_nav li:last-child {
+    margin-right: 0;
 }
 
-header nav div a:hover {
-    color: #0065FC;
-    border-top: 3px solid #0065FC; /* Ajoute une bordure supérieure bleue de 5 pixels */
+img.logo-container {
+    width: 61px;
+    height: 19px;
 }
 
-.fa-solid {
-    color: var(--main-color);
-}
-
-.text-trouver-hebergement {
-    font-size: 22px;
-    padding-top: 26px;
-    padding-bottom: 10px;
-}
-
-.plein-centre {
-    font-size: 16px;
-    padding-bottom: 49px;
+.header,
+.menu-container {
+    height: 79px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -59,31 +44,56 @@ header nav div a:hover {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {
 
+
     header nav div a {
         text-align: center;
-        width: 50%;
-        margin-left: 20px;
-    }
-
-    header nav div a:hover {
-        color: #0065FC;
-        border-top: 2px solid #0065FC; /* Ajoute une bordure supérieure bleue de 5 pixels */
-        padding-top: 3px; /* Ajoute un espace en haut du contenu pour compenser la bordure */
+        width: 100%;
     }
      
 }
 
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 768px) {
-    /* ... */
 
-    header nav div {
-        width: 100%;
+    .liste_nav {
+        margin: 0;
     }
 
-    header nav a img {
-        width: 120px;
-        height: 30px;
+    .liste_nav li {
+        width: 50%;
+        margin: 0;
+        text-align: center;
+        border-bottom: #f2f2f2 solid 2px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .liste_nav a {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .liste_nav li:hover {
+        border-bottom: #0065FC solid 2px;
+        border-top: none;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .logo-container {
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .menu-container {
+        width: 100%;
     }
 
 }
