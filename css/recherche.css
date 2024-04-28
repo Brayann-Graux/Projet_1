@@ -18,8 +18,7 @@
 .fa-solid.fa-location-dot {
     color: black;
     background: #F2F2F2;
-    height: 49px;
-    width: 49px;
+    padding: 15px;
     border-radius: 15px 0px 0px 15px;
     display: flex;
     justify-content: center;
