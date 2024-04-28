@@ -53,6 +53,7 @@
 
     .activites img {
         height: 200px;
+        object-fit: cover;
     }
 
     .activites .card-content {
@@ -69,6 +70,10 @@
 
     .activites-cards {
         display: block;
+    }
+
+    .activites img {
+        object-fit: cover;
     }
 
     .activites-cards a:hover {
