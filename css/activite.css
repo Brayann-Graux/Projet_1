@@ -40,8 +40,8 @@
     text-align: center;
 }
 
-.activites-cards a:hover {
-    transform: translateY(-5px);
+.activites-cards .card-act:hover {
+    padding-bottom: 15px;
 }
 
 

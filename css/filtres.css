@@ -44,31 +44,6 @@
     background-color: #DEEBFF;
 }
 
-#bouton-rechercher-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    background-color: #0065FC;
-    border-radius: 15px;
-    border: solid #0065FC;
-    width: 49px;
-    height: 49px;
-    box-shadow:
-        0px 4px 4px rgba(0, 0, 0, 25%);
-}
-
-#bouton-rechercher-mobile i {
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    width: 100%;
-}
-
-#bouton-rechercher-mobile:active {
-    transform: translateY(1px);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
