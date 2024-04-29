@@ -64,12 +64,22 @@
 
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 768px) {
+
+    .main-container {
+        padding: 0 ;
+    }
+
     .activites {
         margin: 0px 30px;
     }
 
     .activites-cards {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .activites-cards a {
+        width: 100%;
     }
 
     .activites img {
